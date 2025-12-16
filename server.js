@@ -9,7 +9,6 @@ const path = require('path');
 const app = express();
 const portNumber = process.env.portNumber || 3000;
 
-// Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -34,12 +33,10 @@ app.use('/', indexRouter);
 app.use('/dictionary', dictionaryRouter);
 app.use('/history', searchHistoryRouter);
 
-// Error handling
 app.use((req, res) => {
   res.status(404).render('404', { title: 'Page Not Found' });
 });
 
-// Start server
 app.listen(portNumber, () => {
   console.log(`Server running at http://localhost:${portNumber}`);
 });
