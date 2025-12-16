@@ -5,9 +5,9 @@
 
 **App Description:** Allow users to find definitions of words and store/retrieve the results.
 
-**YouTube Video Link:** [inline] 
+**YouTube Video Link:** [https://youtu.be/f2KTJY0_Dt4](https://youtu.be/f2KTJY0_Dt4)
 
-**APIs:** Dictionary [(https://dictionaryapi.dev/)](https://dictionaryapi.dev/)
+**APIs:** Dictionary [https://dictionaryapi.dev/](https://dictionaryapi.dev/)
 
 **Contact Email:**  [ezhang30@terpmail.umd.edu](ezhang30@terpmail.umd.edu), [katywou@terpmail.umd.edu](katywou@terpmail.umd.edu)
 
