@@ -1,11 +1,25 @@
-<div class="container">
-  <div class="hero-section">
-    <h1>Welcome to our Online Dictionary!</h1>
-    <p class="subtitle">Look up any word and get detailed definitions, pronunciations, and examples. Utilizes MongoDB and Public Dictionary API. Created by Katy Wouters and Ethan Zhang for CMSC 335 at UMD Fall 2025.</p>
-  </div>
-
-  <%- include('partials/search-form') %>
-
-  <%- include('partials/footer-image') %>
-
+<div class="search-section">
+  <h1>Welcome to our Online Dictionary!</h1>
+  <p class="subtitle">Look up any word and get detailed definitions, pronunciations, and examples. Utilizes MongoDB and Public Dictionary API. Created by Katy Wouters and Ethan Zhang for CMSC 335 at UMD Fall 2025.</p>
+  <br><br>  
+  <h2>Search for a Word</h2>
+    <form action="/dictionary/search" method="POST" class="search-form">
+      <div class="form-group">
+        <label for="word">Enter a word:</label>
+        <input 
+          type="text" 
+          id="word" 
+          name="word" 
+          placeholder="e.g., serendipity" 
+          required
+          autocomplete="off"
+        >
+      </div>
+      <button type="submit" class="btn">Search</button>
+    </form>
 </div>
+
+  <div class="home-photo">
+    <img src="/images/NelsonDictionaryImage.png" alt="Nelson Dictionary Jesus image">
+    <p class="photo-caption">Image generated using Google Gemini</p>
+  </div>

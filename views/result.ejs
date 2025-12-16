@@ -1,10 +1,26 @@
-<div class="container">
-  <% var searchTitle = 'Search Again'; %>
-  <%- include('partials/search-form', { word: word || '', searchTitle: searchTitle }) %>
+
+  <div class="search-section">
+    <h2>Search Again</h2>
+    <form action="/dictionary/search" method="POST" class="search-form">
+      <div class="form-group">
+        <label for="word">Enter a word:</label>
+        <input 
+          type="text" 
+          id="word" 
+          name="word" 
+          placeholder="e.g., serendipity" 
+          value="<%= word || '' %>"
+          required
+          autocomplete="off"
+        >
+      </div>
+      <button type="submit" class="btn">Search</button>
+    </form>
+  </div>
 
   <% if (error) { %>
     <div class="error-message">
-      <p><%= error %></p>
+      <p>Word not found.</p>
     </div>
   <% } %>
 
@@ -19,19 +35,6 @@
             <% } %>
           </div>
 
-          <% if (entry.phonetics && entry.phonetics.length > 0) { %>
-            <div class="phonetics">
-              <% entry.phonetics.forEach(phonetic => { %>
-                <% if (phonetic.audio) { %>
-                  <audio controls>
-                    <source src="<%= phonetic.audio %>" type="audio/mpeg">
-                    Your browser does not support audio.
-                  </audio>
-                <% } %>
-              <% }) %>
-            </div>
-          <% } %>
-
           <% if (entry.meanings && entry.meanings.length > 0) { %>
             <% entry.meanings.forEach(meaning => { %>
               <div class="meaning">
@@ -44,9 +47,6 @@
                         <p class="definition"><%= def.definition %></p>
                         <% if (def.example) { %>
                           <p class="example"><em>Example: "<%= def.example %>"</em></p>
-                        <% } %>
-                        <% if (def.synonyms && def.synonyms.length > 0) { %>
-                          <p class="synonyms"><strong>Synonyms:</strong> <%= def.synonyms.join(', ') %></p>
                         <% } %>
                       </li>
                     <% }) %>
@@ -68,5 +68,7 @@
     </div>
   <% } %>
 
-  <%- include('partials/footer-image', { imageCaption: 'You cannot escape Dictionary Nelson. Image generated using Google Gemini.' }) %>
-</div>
+  <div class="home-photo">
+    <img src="/images/NelsonDictionaryImage.png" alt="Nelson Dictionary Jesus image">
+    <p class="photo-caption">You cannot escape Dictionary Nelson. Image generated using Google Gemini.</p>
+  </div>

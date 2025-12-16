@@ -1,30 +1,14 @@
-/* CSS Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Root Variables */
-:root {
-  --primary-color: #000080;
-  --secondary-color: #1e40af;
-  --success-color: #10b981;
-  --danger-color: #ef4444;
-  --background-color: #f8fafc;
-  --surface-color: #ffffff;
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
-  --border-color: #e2e8f0;
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
 /* Body Styles */
 body {
-  font-family: 'Roboto', sans-serif; /* Google Font */
-  background-color: var(--background-color);
-  color: var(--text-primary);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
   font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
@@ -34,10 +18,9 @@ body {
 
 /* Navigation */
 nav {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: #000080;
   padding: 1rem 0;
-  box-shadow: var(--shadow);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -52,13 +35,6 @@ nav {
 .nav-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-
-.nav-brand:hover {
-  opacity: 0.9;
 }
 
 .nav-links {
@@ -67,63 +43,35 @@ nav {
   gap: 2rem;
 }
 
-.nav-links a {
+.nav-container a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
-  transition: opacity 0.3s;
-}
-
-.nav-links a:hover {
-  opacity: 0.8;
 }
 
 /* Main Content */
 main {
   flex: 1;
   padding: 2rem 0;
-}
-
-.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* Hero Section */
-.hero-section {
-  text-align: center;
-  padding: 3rem 2rem;
-  background-color: var(--surface-color);
-  border-radius: 12px;
-  box-shadow: var(--shadow-lg);
-  margin-bottom: 2rem;
-}
-
-.hero-section h1 {
-  font-size: 3rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
 .subtitle {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: #64748b;
 }
 
 /* Search Section */
 .search-section {
-  background-color: var(--surface-color);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: var(--shadow);
   margin-bottom: 2rem;
 }
 
 .search-section h2 {
   font-size: 1.75rem;
-  color: var(--text-primary);
+  color: #1e293b;
   margin-bottom: 1.5rem;
 }
 
@@ -143,26 +91,18 @@ main {
 .form-group label {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--text-primary);
+  color: #1e293b;
 }
 
 .form-group input {
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 2px solid var(--border-color);
+  border: 2px solid #e2e8f0;
   border-radius: 8px;
   background-color: white;
-  color: var(--text-primary);
-  transition: border-color 0.3s, box-shadow 0.3s;
+  color: #1e293b;
 }
 
-.form-group input:focus {
-  outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-}
-
-/* Buttons */
 .btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -174,32 +114,8 @@ main {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn:active {
-  transform: translateY(0);
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
+  background-color: #000080;
   color: white;
-}
-
-.btn-primary:hover {
-  background-color: var(--secondary-color);
-}
-
-.btn-danger {
-  background-color: var(--danger-color);
-  color: white;
-}
-
-.btn-danger:hover {
-  background-color: #dc2626;
 }
 
 /* Photo Section */
@@ -216,10 +132,10 @@ main {
 
 /* Result Section */
 .result-section {
-  background-color: var(--surface-color);
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
 }
 
@@ -228,21 +144,21 @@ main {
 }
 
 .word-header {
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 3px solid #000080;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .word-header h1 {
   font-size: 2.5rem;
-  color: var(--primary-color);
+  color: #000080;
   display: inline-block;
   margin-right: 1rem;
 }
 
 .phonetic {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  color: #64748b;
   font-style: italic;
 }
 
@@ -256,7 +172,7 @@ main {
 
 .part-of-speech {
   font-size: 1.5rem;
-  color: var(--secondary-color);
+  color: #1e40af;
   font-style: italic;
   margin-bottom: 1rem;
 }
@@ -272,34 +188,26 @@ main {
 }
 
 .definition {
-  color: var(--text-primary);
+  color: #1e293b;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 .example {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
   padding-left: 1rem;
-  border-left: 3px solid var(--border-color);
 }
 
-.synonyms, .synonyms-section, .antonyms-section {
-  color: var(--text-secondary);
+.synonyms, .example, .synonyms-section, .antonyms-section {
+  color: #64748b;
   font-size: 0.95rem;
   margin-top: 0.5rem;
 }
 
 /* Error Message - Required: background-color, color */
 .error-message {
-  background-color: #fee2e2;
-  color: var(--danger-color);
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid var(--danger-color);
+  color: #ef4444;
   margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 /* History Section - Required: background-color, font-size */
@@ -308,18 +216,8 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
-}
-
-.history-header h1 {
-  font-size: 2rem;
-  color: var(--text-primary);
-}
-
-.history-section {
-  background-color: var(--surface-color);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
+  font-size: 1.5rem;
+  color: #1e293b;
 }
 
 .history-table {
@@ -329,25 +227,19 @@ main {
 }
 
 .history-table thead {
-  background-color: var(--primary-color);
+  background-color: #000080;
   color: white;
 }
 
 .history-table th {
   padding: 1rem;
   text-align: left;
-  font-size: 1rem;
   font-weight: 600;
 }
 
 .history-table td {
   padding: 1rem;
-  border-bottom: 1px solid var(--border-color);
-  font-size: 0.95rem;
-}
-
-.history-table tr:hover {
-  background-color: var(--background-color);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .status {
@@ -359,101 +251,36 @@ main {
 
 .status-found {
   background-color: #d1fae5;
-  color: var(--success-color);
+  color: #10b981;
 }
 
 .status-not-found {
   background-color: #fee2e2;
-  color: var(--danger-color);
+  color: #ef4444;
 }
 
 .empty-state {
-  background-color: var(--surface-color);
+  background-color: #ffffff;
   padding: 3rem;
   border-radius: 12px;
   text-align: center;
-  box-shadow: var(--shadow);
-}
-
-.empty-state p {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   font-size: 1.125rem;
-  color: var(--text-secondary);
+  color: #64748b;
 }
 
-.empty-state a {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-/* Error Page - Required: font-size, color */
 .error-page {
   text-align: center;
   padding: 4rem 2rem;
-}
-
-.error-page h1 {
-  font-size: 6rem;
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-.error-page h2 {
+  color: #000080;
   font-size: 2rem;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
 }
 
-.error-page p {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-}
-
-/* Footer - Required: background-color, color, font-size */
 footer {
-  background-color: var(--text-primary);
+  background-color: #1e293b;
   color: white;
   text-align: center;
   padding: 1.5rem 0;
   margin-top: auto;
   font-size: 0.875rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-  }
-
-  .nav-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .features-list {
-    grid-template-columns: 1fr;
-  }
-
-  .history-header {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .history-table {
-    font-size: 0.875rem;
-  }
-
-  .history-table th,
-  .history-table td {
-    padding: 0.5rem;
-  }
 }

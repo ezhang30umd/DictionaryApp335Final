@@ -1,9 +1,10 @@
-<div class="container">
+
   <div class="history-header">
+    <br>
     <h1>Search History</h1>
     <% if (history && history.length > 0) { %>
       <form action="/history/clear" method="POST" style="display: inline;">
-        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to clear all history?')">
+        <button type="submit" class="btn" onclick="return confirm('Are you sure you want to clear all history?')">
           Clear History
         </button>
       </form>
@@ -11,7 +12,6 @@
   </div>
 
   <% if (history && history.length > 0) { %>
-    <div class="history-section">
       <table class="history-table">
         <thead>
           <tr>
@@ -34,12 +34,13 @@
           <% }) %>
         </tbody>
       </table>
-    </div>
   <% } else { %>
     <div class="empty-state">
-      <p>No search history yet. <a href="/">Search for a word</a> to get started!</p>
+      <p>No search history yet.</p>
     </div>
   <% } %>
 
-  <%- include('partials/footer-image', { imageCaption: 'Thank Nelson for this wonderful Dictionary. Image generated using Google Gemini.' }) %>
-</div>
+  <div class="home-photo">
+    <img src="/images/NelsonDictionaryImage.png" alt="Nelson Dictionary Jesus image">
+    <p class="photo-caption">Thank Nelson for this wonderful Dictionary. Image generated using Google Gemini.</p>
+  </div>
