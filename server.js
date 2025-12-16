@@ -2,9 +2,9 @@ const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const path = require('path');
-require("dotenv").config({
-   path: path.resolve(__dirname, "credentialsDontPost/.env"),
-});
+// require("dotenv").config({
+//    path: path.resolve(__dirname, "credentialsDontPost/.env"),
+// });
 
 const app = express();
 const portNumber = process.env.portNumber || 3000;
