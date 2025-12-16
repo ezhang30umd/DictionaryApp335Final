@@ -9,6 +9,6 @@
 
 **APIs:** Dictionary [(https://dictionaryapi.dev/)](https://dictionaryapi.dev/)
 
-**Contact Email:**  [ezhang30@terpmail.umd.edu](ezhang30@terpmail.umd.edu)
+**Contact Email:**  [ezhang30@terpmail.umd.edu](ezhang30@terpmail.umd.edu), [katywou@terpmail.umd.edu](katywou@terpmail.umd.edu)
 
 **Deployed App Link:** [https://dictionaryapp335final-rl3p.onrender.com/](https://dictionaryapp335final-rl3p.onrender.com/)
