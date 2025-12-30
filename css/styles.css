@@ -206,6 +206,7 @@ main {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   color: #1e293b;
+  width: 100%;
 }
 
 .history-table {
