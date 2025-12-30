@@ -196,6 +196,7 @@ main {
   color: #ef4444;
   margin-bottom: 2rem;
   font-size: 1.5rem;
+  min-width: 1000px;
 }
 
 /* History Section - Required: background-color, font-size */
@@ -206,14 +207,14 @@ main {
   margin-bottom: 2rem;
   font-size: 1.5rem;
   color: #1e293b;
-  min-width: 800px;
+  min-width: 1000px;
 }
 
 .history-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 1rem;
-  min-width: 800px;
+  min-width: 1000px;
 }
 
 .history-table thead {
