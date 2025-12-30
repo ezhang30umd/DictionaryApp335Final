@@ -118,18 +118,6 @@ main {
   color: white;
 }
 
-/* Photo Section */
-.home-photo {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.home-photo img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
 /* Result Section */
 .result-section {
   background-color: #ffffff;
