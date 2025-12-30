@@ -199,6 +199,12 @@ main {
 }
 
 /* History Section - Required: background-color, font-size */
+.history-header, .history-table {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .history-header {
   display: flex;
   justify-content: space-between;
@@ -213,6 +219,7 @@ main {
   width: 100%;
   border-collapse: collapse;
   font-size: 1rem;
+  margin-bottom: 3rem;
 }
 
 .history-table thead {
